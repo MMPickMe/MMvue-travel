@@ -1,0 +1,160 @@
+.previewMovie {
+    width: 1500px;
+    height: 412px;
+    margin: 0 auto;
+}
+
+.previewMovie .mod-left {
+    width: 1290px;
+    height: 412px;
+    float: left;
+}
+
+.previewMovie .mod-left .qy-mod-header {
+    height: 28px;
+    width: 100%;
+    line-height: 28px;
+    font-size: 28px;
+    color: #222;
+}
+
+.previewMovie .mod-left>ul {
+    width: 1290px;
+    height: 177px;
+}
+
+.previewMovie .mod-left .haveAMargin {
+    margin-bottom: 15px;
+}
+
+.previewMovie .mod-left>ul>li {
+    width: 210px;
+    height: 177px;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+}
+
+.previewMovie .mod-left>ul>li .haveA1080p {
+    width: 47px;
+    height: 19px;
+    background: url(../img/iqiyi_sprite3.png) no-repeat -125px 0;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+
+.previewMovie .mod-left>ul>li .forPic {
+    width: 210px;
+    height: 118px;
+    overflow: hidden;
+    display: block;
+}
+
+.previewMovie .mod-left>ul>li .forPic img {
+    display: block;
+    transition: 300ms linear;
+}
+
+.previewMovie .mod-left>ul>li .forPic img:hover {
+    transform: scale(1.1);
+}
+
+.previewMovie .mod-left>ul>li .forWord {
+    width: 190px;
+    height: 47px;
+    background: #f8f8f8;
+    padding: 6px 10px;
+}
+
+.previewMovie .mod-left>ul>li .forWord a {
+    color: #222;
+}
+
+.previewMovie .mod-left>ul>li .forWord>p {
+    width: 190px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.previewMovie .mod-left>ul>li .forWord>.haveA {
+    line-height: 23px;
+    height: 23px;
+    font-size: 15px;
+}
+
+.previewMovie .mod-left>ul>li:hover .forWord a {
+    color: #00be06;
+}
+
+.previewMovie .mod-right {
+    width: 210px;
+    height: 412px;
+    float: left;
+}
+
+.previewMovie .mod-right>ul {
+    width: 210px;
+    padding-top: 16px;
+    height: 353px;
+    background: #f8f8f8;
+}
+
+.previewMovie .mod-right>ul>li {
+    height: 21px;
+    padding-bottom: 14px;
+}
+
+.previewMovie .mod-right>ul>li .txt-img {
+    width: 30px;
+    height: 21px;
+    line-height: 21px;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    color: #999;
+    display: inline-block;
+}
+
+.previewMovie .mod-right>ul>li .txt-link {
+    width: 110px;
+    height: 21px;
+    line-height: 21px;
+    color: #222;
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.previewMovie .mod-right>ul>li .txt-link:hover {
+    color: #00be06;
+}
+
+.previewMovie .mod-right>ul>li .txt-point {
+    width: 45px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    display: inline-block;
+}
+
+.previewMovie .mod-right>ul>li .haveBG1 {
+    background: red;
+    color: #fff;
+}
+
+.previewMovie .mod-right>ul>li .haveBG2 {
+    background: #ff6000;
+    color: #fff;
+}
+
+.previewMovie .mod-right>ul>li .haveBG3 {
+    background: #ffb400;
+    color: #fff;
+}

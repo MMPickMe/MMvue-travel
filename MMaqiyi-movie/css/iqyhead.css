@@ -1,0 +1,418 @@
+    /* 头部 */
+    
+    #header {
+        background: #232325;
+        height: 590px;
+    }
+    
+    .header2 {
+        background: #232325;
+        height: 520px;
+        padding-top: 70px;
+    }
+    /* 导航 */
+    
+    .haveNav {
+        width: 100%;
+        height: 70px;
+        background: #232325;
+        z-index: 1211;
+    }
+    
+    .haveNav2 {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        margin-left: 50%- 750px;
+    }
+    
+    .nav {
+        height: 70px;
+        /* background: #e78578; */
+        width: 1500px;
+        margin: 0 auto;
+    }
+    
+    .nav .logo {
+        float: left;
+        width: 183px;
+        height: 54px;
+    }
+    
+    .nav .logo a:nth-child(1) {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        margin-top: 14px;
+    }
+    
+    .nav .logo a img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nav .logo .logo-dot {
+        display: inline-block;
+        vertical-align: top;
+        letter-spacing: 0;
+        width: 3px;
+        height: 3px;
+        margin: 34px 5px 0;
+        border-radius: 50%;
+        background-color: #00be06;
+    }
+    
+    .nav .logo a:nth-child(2) {
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+        background: yellow;
+    }
+    
+    .nav .logo .logo-channel {
+        display: inline-block;
+        vertical-align: top;
+        height: 24px;
+        margin-top: 23px;
+        line-height: 23px;
+        font-size: 20px;
+        color: #00be06;
+        width: 40px;
+    }
+    
+    .qy-nav .nav-home,
+    .qy-nav .nav-home .home-line {
+        display: inline-block;
+        vertical-align: top;
+        letter-spacing: 0;
+    }
+    
+    .nav .qy-nav {
+        float: left;
+        height: 24px;
+        width: 123px;
+        margin: 24px 0 0 20px;
+        line-height: 23px;
+        font-size: 0;
+    }
+    
+    .qy-nav .nav-link {
+        margin: 0 10px;
+        vertical-align: top;
+        font-size: 16px;
+        color: #ccc;
+    }
+    
+    .qy-nav .nav-home .home-line {
+        width: 2px;
+        height: 11px;
+        margin-top: 6px;
+        background-color: #666;
+    }
+    
+    .qy-nav .nav-guide {
+        display: inline-block;
+        vertical-align: top;
+        letter-spacing: 0;
+        cursor: pointer;
+        width: 49px;
+        height: 17px;
+        position: relative;
+    }
+    
+    .qy-nav .nav-link:hover {
+        color: #00be06;
+    }
+    
+    .qy-nav .nav-guide .icon-moreunfold {
+        font-size: 12px;
+        color: #999;
+        vertical-align: top;
+        display: inline-block;
+        transition: all 500ms linear;
+        font-weight: bolder;
+    }
+    /* --特殊下滑-------------------------------------------------------------------------------------------- */
+    
+    .nav-guide:hover .icon-moreunfold {
+        color: #00be06;
+        transform: rotate(180deg);
+    }
+    
+    .qy-nav .nav-guide .moremore {
+        position: absolute;
+        left: -267px;
+        top: 22px;
+        width: 1500px;
+        padding: 10px 0 10px;
+        height: 68px;
+        background: #1d1b1c;
+        z-index: 222;
+        display: none;
+    }
+    
+    .nav-guide:hover .moremore {
+        display: block;
+    }
+    
+    .qy-nav .nav-guide .moremore .pass {
+        float: left;
+        width: 1px;
+        height: 68px;
+        background: radial-gradient(at center, #ccc, #1d1b1c);
+    }
+    
+    .qy-nav .nav-guide .moremore .first {
+        margin-right: 30px;
+        width: 259px;
+        float: left;
+    }
+    
+    .qy-nav .nav-guide .moremore .next1 {
+        margin-left: 10px;
+        width: 206px;
+    }
+    
+    .qy-nav .nav-guide .moremore .next2 {
+        margin-left: 10px;
+        width: 367px;
+    }
+    
+    .qy-nav .nav-guide .moremore .next3 {
+        margin-left: 10px;
+        width: 430px;
+        float: left;
+    }
+    
+    .qy-nav .nav-guide .moremore a {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 14px;
+        color: #ccc;
+        line-height: 34px;
+        height: 34px;
+    }
+    
+    .qy-nav .nav-guide .moremore a:hover {
+        color: #00be06;
+    }
+    
+    .qy-nav .nav-guide .moremore .right {
+        float: left;
+        width: 114px;
+    }
+    
+    .qy-nav .nav-guide .moremore .right a:nth-child(1) {
+        margin-left: 40px;
+        width: 34px;
+        display: block;
+        height: 45px;
+    }
+    
+    .qy-nav .nav-guide .moremore .right a:nth-child(1) i {
+        margin: 0 auto;
+        color: yellow;
+        font-size: 34px;
+    }
+    
+    .qy-nav .nav-guide .moremore .right a:nth-child(2) {
+        font-size: 14px;
+        line-height: 14px;
+        display: block;
+        height: 14px;
+        color: yellow;
+        margin-left: 0px;
+        text-align: center;
+    }
+    /* 
+    ----------------------------------------- */
+    
+    .nav .qy-search {
+        width: 560px;
+        height: 42px;
+        background: transparent;
+        float: left;
+        margin-left: 150px;
+        margin-top: 14px;
+    }
+    
+    .nav .qy-search .search-box-in {
+        display: inline-block;
+        vertical-align: top;
+        letter-spacing: 0;
+        padding-right: 42px;
+        position: relative;
+        background-color: #333333;
+        border-radius: 21px 0 0 21px;
+    }
+    
+    .qy-search .search-box-input {
+        display: block;
+        width: 422px;
+        height: 20px;
+        padding: 11px 0;
+        line-height: 20px;
+        text-indent: 17px;
+        border-radius: 21px 0 0 21px;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        font-size: 16px;
+        color: #999;
+        font-family: Microsoft Yahei;
+    }
+    
+    .nav .qy-search .search-box-in a {
+        position: absolute;
+        left: 433px;
+        top: 5px;
+        color: #666;
+        cursor: pointer;
+    }
+    
+    .qy-search .icon-camera {
+        display: inline-block;
+        vertical-align: -1px;
+        font-family: iconfont!important;
+        font-style: normal;
+        font-size: 22px;
+        color: #ccc;
+        font-weight: bolder;
+    }
+    
+    .qy-search .icon-camera:hover {
+        color: #00be06;
+    }
+    
+    .nav .qy-search .search-box-in:hover {
+        background: #666;
+    }
+    
+    .qy-search .search-box-out {
+        display: inline-block;
+        width: 92px;
+        height: 42px;
+        line-height: 42px;
+        border-radius: 0 21px 21px 0;
+        background-color: #00be06;
+        position: relative;
+        color: #fff;
+        text-indent: 3px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .qy-search .search-box-out i {
+        width: 16px;
+        height: 18px;
+        font-size: 16px;
+        margin-right: 4px;
+        vertical-align: 0;
+        display: inline-block;
+        color: white;
+    }
+    
+    .qy-search .search-box-out:hover {
+        background: #00c806;
+    }
+    
+    .nav .qy-header-side-login {
+        margin-top: 16px;
+        float: right;
+        width: 341px;
+        height: 45px;
+    }
+    
+    .nav .qy-header-side-login .header-user {
+        position: relative;
+        float: left;
+        width: 73px;
+        height: 45px;
+    }
+    
+    .nav .qy-header-side-login .header-user>a {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    .nav .qy-header-side-login .header-user>a>i {
+        line-height: 20px;
+        font-size: 20px;
+        color: #999;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .nav .qy-header-side-login .header-user>a>i:hover {
+        color: #00be06;
+    }
+    
+    .nav .qy-header-side-login .header-user .header-sideItemTit {
+        position: absolute;
+        width: 73px;
+        height: 24px;
+        bottom: 0px;
+        display: block;
+        height: 24px;
+        line-height: 23px;
+        font-size: 13px;
+        color: #666;
+    }
+    
+    .header-sideItemTit .header-userSign-link {
+        line-height: 23px;
+        font-size: 13px;
+        color: #666;
+    }
+    
+    .header-sideItemTit .header-userSign-link:hover {
+        color: #00be06;
+    }
+    
+    .header-sideItemTit>i {
+        margin: 0 4px;
+    }
+    
+    .nav .qy-header-side-login .header-vip {
+        margin-left: 25px;
+        height: 45px;
+        float: left;
+        color: #666;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .header-vip>i {
+        width: 16px;
+        margin: 0px 5px 0px;
+        display: block;
+    }
+    
+    .header-vip:hover .header-p {
+        color: #00be06;
+    }
+    
+    .header-vip:hover .iconfont {
+        color: #00be06;
+    }
+    
+    .header-vip:hover .header-ppp {
+        color: #fce0ab;
+    }
+    
+    .header-vip:hover .icon-huangguan {
+        color: #fce0ab;
+    }
+    
+    .header-vip .vvvip {
+        position: absolute;
+        left: 10px;
+        top: -10px;
+        width: 45px;
+        height: 17px;
+        background: url(../img/iqiyi_sprite.png) no-repeat -120px -120px;
+    }
