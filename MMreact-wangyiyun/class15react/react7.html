@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+	
+    <div id="explam"></div>
+    <script type="text/babel">
+    	var explam=document.getElementById('explam');
+    	//props
+    	
+		class Helloall extends React.Component{
+			constructor(){
+				super()
+				this.state={
+					name:'aaaaa',
+					n:1
+				}
+			}
+			click(){
+				this.setState({
+					n:this.state.n+1
+				})
+			}
+			render(){
+				console.log(this.state);
+				return <h3 title={this.state.name} onClick={this.click.bind(this)}>{this.state.n}</h3>
+	
+			}
+			
+		}
+	
+		ReactDOM.render(
+        	<Helloall className="red" name="heall" >
+        	
+        	
+        	</Helloall>,
+        	explam
+        )
+    </script>
+    
+</body>
+
+</html>

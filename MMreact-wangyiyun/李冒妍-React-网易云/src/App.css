@@ -1,0 +1,385 @@
+html{ font-size: 62.5%;}
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+header{ 
+	
+	height:5rem; background: #d43c33; color: #fff; font-size: 2rem; line-height: 5rem;position: relative;}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+.App{
+	padding-top: 8rem;
+}
+.topfixed{
+	width: 100%;
+	height: 8rem;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+header .icon-wangyiyunyinle{
+	font-size: 2rem;
+	color: #d43c33;
+	background: #fff;
+	border-radius: 30%;
+	border:1px solid #fff;
+	margin-left: 3%;
+	line-height: 5rem;
+	 
+	
+}
+header .download{
+	position: absolute;
+	right: 2rem;
+	top: 1.25rem;
+	display: block;
+	width: 6.2rem;
+	height: 2.3rem;
+	line-height: 2.5rem;
+	text-align: center;
+	border: 0.05rem solid #fff;
+	border-radius: 1.25rem;
+	font-size: 1.5rem;
+}
+
+.nav{ 
+	display: flex; 
+	justify-content: space-around;
+	height: 3rem;
+	width: 100%;
+	border-bottom: 0.1rem solid #ccc;
+	line-height: 3rem;
+	background: #fff;
+}
+.nav>a{ 
+	
+	font-size: 1.5rem; 
+	color: #333; 
+	text-decoration: none;
+}
+.nav .act{
+	color: #f00; 
+	border-bottom: 1px solid #f00;
+}
+
+.flex{ 
+	display: flex;
+}
+.singList{
+	margin: 1rem 0;
+	height: 1.6rem;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	text-indent: 0.7rem;
+	border-left:0.2rem solid #D43C33;
+	
+}
+.singerP{
+	display:inline-flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.singer{
+	width: 32%;
+	margin-bottom: 1rem;
+	position: relative;
+	
+	
+}
+.singer .wan{
+	position: absolute;
+	right: 0;
+	top: 0.2rem;
+	color: #fff;
+	
+}
+.singer .thisis2{
+	
+	width: 100%;
+	padding: 0 0.5rem;
+	box-sizing: border-box;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    height: 3rem;
+    
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	/*! autoprefixer: off*/
+	-webkit-box-orient: vertical;
+
+    color: #000;
+    
+    margin: 0;
+    margin-top: 0.3rem;
+    text-decoration: none;
+	   
+}
+.newest{
+	width: 96%;
+	margin-left: 4%;
+}
+.newest>a{
+	display: block;
+	width: 100%;
+	height: 5rem;
+	border-bottom: 0.1rem solid #ccc;
+	position: relative;
+}
+.newest>a .title{
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #000;
+	font-size: 1.9rem;
+	line-height: 3rem;
+}
+.newest>a .title .banben{
+	color: #888;
+	margin-left: 0.3rem;
+}
+
+.newest>a .actor>div{
+	width: 1.2rem;
+	height: 1rem;
+	background-image:url(http://localhost:3000/img/index_icon.png) ;
+	background-size: 14rem 8rem;
+	background-position:  0 0.3rem;
+}
+.newest>a .actor{
+	width: 93%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #888;
+	font-size: 0.6rem;
+	line-height: 1rem;
+}
+.newest>a .start{
+	width: 2rem;
+	height: 2rem;
+	background-image:url(http://localhost:3000/img/index_icon.png) ;
+	background-size: 14rem 8rem;
+	background-position: -2rem 0;
+	position: absolute;
+	right: 1rem;
+	top: 1.5rem;
+}
+.blo-i{
+	display: inline-block;
+}
+.musicBottom{
+	display: block;
+	color: #000;
+	width: 100%;
+	height: 14rem;
+	background-image:url(http://localhost:3000/img/index_bottom_bg.png) ;
+	background-size: 100% ;
+	margin-top: 1rem;
+}
+.musicBottom>h3{
+	width: 100%;
+	font-weight: 100;
+	height: 4rem;
+	font-size: 4rem;
+	line-height: 4rem;;
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.musicBottom>h3>.icon-wangyiyunyinle{
+	height:4rem;
+	line-height: 4rem;
+	font-size: 4rem;
+	border-radius: 1rem;
+	color: #fff;
+	background: red;
+	margin-right: 0.5rem;
+	
+}
+.musicBottom>.openApp{
+	width: 80%;
+	margin-left: 10%;
+	height: 3rem;
+	line-height: 3rem;
+	border-radius: 1.5rem;
+	color: #D43C33;
+	font-size: 1.8rem;
+	text-align: center;
+	border: 0.1rem solid  #D43C33;
+	margin-top: 1rem;
+	
+}
+.musicBottom .copyright{
+	margin-top: 0.5rem;
+	font-size: 0.6rem;
+}
+
+
+
+
+/*-------------------------------------------*/
+
+.Hot_top{
+	width: 95%;
+	height: 9rem;
+	background-color: #b85340;
+	padding-left: 5%;
+	padding-top: 1rem;
+	color: #fff;
+	font-size:1rem;
+	
+	
+}
+.Hot_top .Hot_bg{
+	
+	width:50% ;
+	height: 6rem;
+	background-image:url(http://localhost:3000/img/index_icon.png) ;
+	background-size: 14rem 8rem;
+	background-position:  -2rem -2rem;
+	background-repeat: no-repeat;
+	margin-bottom: 0.5rem;
+}
+.hotmusic{
+	
+	margin-left: 12%;
+	width: 88%;
+}
+.newest>a .No{
+	position: absolute;
+	left: -10%;
+	top: 1.6rem;
+	font-size: 1.7rem;
+}
+.newest>a:nth-child(1) .No,
+.newest>a:nth-child(2) .No,
+.newest>a:nth-child(3) .No{
+	color: #D43C33;
+}
+.findmore{
+	width: 100%;
+	height:5rem;
+	display: block;
+	text-align: center;
+	line-height: 5rem;
+	font-size: 1.5rem;
+	color:#999 ;
+}
+/*---------------------------------------------*/
+.search{
+	margin-top: 1.25rem;
+	width:94%;
+	height: 2.5rem;
+	margin-left: 3%;
+	background: #ebeded;
+	border: 0;
+	border-radius: 1.25rem;
+	
+	text-indent: 10%;
+	
+}
+.poiRel{
+	position: relative;
+}
+.searchI{
+	position: absolute;
+	left: 5%;
+	top: 1.8rem;
+	color: #c9c9c9;
+}
+
+input::-webkit-input-placeholder {
+        /* placeholder颜色  */
+         color: #c9c9c9;
+    
+    }
+    
+ .poiRel .searchIng{
+   	width: 97%;
+   	margin-left: 3%;
+   	color: blue;
+   	font-size: 2rem;
+   	line-height: 3rem;
+  
+   
+   }	 
+    
+.hotSearch>p{
+	border-top: 0.1rem solid #ccc;
+	margin-top: 1.25rem;
+	height: 3rem;
+	line-height: 3rem;
+	padding-left: 3%;
+	color: #666;
+	
+}
+.hotSearch>div{
+	
+}
+.hotSearch .searchMore{
+	display: inline-block;
+	color: #000000;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	font-size: 1.6rem;
+	border: 0.1rem solid #ccc;
+	padding: 0 1rem;
+	border-radius: 1.2rem;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+	}
+.dis{
+	display: none;
+}
+.AChaCha{
+	width: 1.4rem;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	text-align: center;
+	background: #ccc;
+	border-radius: 50%;
+	position: absolute;
+	right: 2rem;
+	top: 1.8rem;
+	
+	
+}
+.history{
+	position: relative;
+	width: 85%;
+	
+	
+	margin-left: 12%;
+	border-bottom: 0.1rem solid #ccc;
+}
+.history>p{
+	height: 3rem;
+	font-size: 1.6rem;
+	line-height: 3rem;
+}
+.history .icon-shijian{
+	position: absolute;
+	left: -3.5rem;
+	top: 1rem;
+	color: #ccc;
+}
+.history .icon-close{
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	color: #ccc;
+}
+
+
+

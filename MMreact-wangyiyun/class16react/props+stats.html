@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+	
+    <div id="app"></div>
+    <script type="text/babel">
+    	var app=document.getElementById('app');
+    	
+		class Hel extends React.Component{
+			
+		
+			constructor(){
+				super()
+				this.state={color:'#ccc'}
+			}
+			click(){
+//				var arr=['#f00','#f0f','#0f0','#0ff','#ff0'];
+//				var ccc=Math.floor(Math.random()*5);
+				var col='rgb('+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+')'
+				this.setState({
+					color:col
+				})
+				
+				console.log(col)
+			}
+			render(){
+				//console.log(this)
+				return <div>
+					<p style={{color:this.state.color }}>zhis is a P</p>
+					<button onClick={this.click.bind(this)}>pick me </button>
+				</div>
+			}
+		}
+		
+		
+		Hel.defaultProps={
+			color:'green',
+			className:'red'
+		}
+		ReactDOM.render(
+        	<Hel></Hel>,
+        	app
+        )
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+    <div id="explam"></div>
+    <script type="text/babel">
+    	var explam=document.getElementById('explam');
+    	//var arr=[<h1>123</h1>,<h1>222</h1>,<h1>333</h1>];//这么写会有警告
+  		var arr=[<h1 key='0'>123</h1>,<h1 key='1'>222</h1>,<h1 key='2'>333</h1>];//这么写
+//      ReactDOM.render(
+//      	<div>{arr}</div>,
+//      	explam
+//      )
+
+
+
+//		var day=new Date().getHours();
+//		var day2=new Date().getdate();
+//		ReactDOM.render(
+//      	<div>{day}</div>,
+//      	explam
+//      )
+
+
+		var obj={name:'hello',age:19}
+		var flag=true;
+		function fun(use){
+			if(use){
+				return use.name;
+			}
+			else{
+				return (<h1>hello</h1>);
+			}
+			
+			
+		}
+		ReactDOM.render(
+        	<div>{fun()}<br/>{flag?<h2>true</h2>:2}</div>,
+        	explam
+        )
+    </script>
+    
+</body>
+
+</html>

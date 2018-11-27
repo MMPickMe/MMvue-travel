@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+	
+    <div id="explam"></div>
+    <script type="text/babel">
+    	var explam=document.getElementById('explam');
+    	//创建一个标签
+    	var con1=React.createElement(
+    		'p',
+    		 {className:'red',title:"asd"},
+    		 'zhis is a P'
+    	)
+//  	ReactDOM.render(
+//      	<div>{con1}</div>,
+//      	explam
+//      )
+    	var imgsrc='img/1.jpg';
+   
+		ReactDOM.render(
+        	<div> <img src={imgsrc} width="300px"/></div>,
+        	explam
+        )
+		
+    </script>
+    
+</body>
+
+</html>

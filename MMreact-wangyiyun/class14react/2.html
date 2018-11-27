@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+
+    <!-- render 生成一个template 模板 //
+        jsx 可以识别 解析为标签 {} 按照js语法识别代码 , //
+        jsx 改变了一些属性 class=>className for => htmlFor jsx 里面 //
+        js语句可以嵌套标签 ,标签里面也可以嵌套js { {}}  -->
+    <div id="explam"></div>
+    <script type="text/babel">
+
+        var arr = ['水果','蔬菜','不知道'];/*数组遍历*/ 
+        var list =<ul>{arr.map(function (item,index) { return <li>{item}</li>}) }</ul>; 
+        ReactDOM.render( list, document.getElementById('explam') )
+
+    </script>
+</body>
+
+</html>

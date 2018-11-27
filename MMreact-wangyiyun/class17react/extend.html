@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+	
+    <div id="app"></div>
+    <script type="text/babel">
+    	var app=document.getElementById('app');
+    	
+		class Child extends React.Component{	
+			constructor(props){
+					super(props)
+					this.state={
+						child:'子组件的值来了'
+					}
+				}
+			click(data){
+//				console.log(this);
+//				console.log(this.state.child);
+				this.props.pfn(data);
+				console.log(data);
+			}
+			render(){
+				return <ul className={this.props.className}>{
+					this.props.arr.map((item)=>{
+						return <li>{item}</li>
+					})
+				}
+				<button onClick={this.click.bind(this,this.state.child)}>{this.state.child}</button>
+				</ul>
+//				<div>{this.state.arr}</div>
+			}
+		}
+		class Parent extends React.Component{
+			
+			constructor(){
+				super()
+				this.state={
+					arr:['hello','react','hah'],
+					par:'我是父组件的内容'
+				}
+			}
+			pfn(data){
+				this.setState({
+					par:data
+				})
+			}
+			render(){
+				return <div><Child arr={this.state.arr} pfn={this.pfn.bind(this)}/><p>{this.state.par}</p></div>
+			}
+		}
+		Child.defaultProps={
+			
+			className:'red'
+		}
+		Parent.defaultProps={
+			className:'blue'
+		}
+		ReactDOM.render(
+        	<Parent/>,
+        	app
+        )
+    </script>
+    
+</body>
+
+</html>

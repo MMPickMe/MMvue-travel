@@ -1,0 +1,10 @@
+
+html{ font-size: 62.5%;}
+header{ height:5rem; background: #d43c33; color: #fff; font-size: 2rem; line-height: 5rem;}
+.act{color: #f00; border-bottom: 1px solid #f00;}
+
+nav{ display: flex; justify-content: space-around;}
+nav>a{ font-size: 2rem; color: #333; text-decoration: none;}
+
+
+.flex{ display: flex;}

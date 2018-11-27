@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+<body>
+        <div><label for='inp'>点我</label><input type='text' id='inp' /></div><hr>
+    <div id="explam"></div>
+    <script type="text/babel">
+    // render  生成一个template 模板
+    /*
+    jsx  可以识别<>  解析为标签   {}  按照js语法识别代码
+    jsx  改变了一些属性
+    class=>className
+    for => htmlFor
+
+    */
+        // var h1 = (<h1>{1+2}</h1>); //  小括号
+        // var h1 = <h1 className='red' id='asd'>{1+2}</h1>;
+        // ReactDOM.render(
+        //     h1,
+        //     document.getElementById('explam')
+        // )
+        var list =<div><label htmlFor='inps'>点我</label><input type='text' id='inps' /></div>;
+        ReactDOM.render(
+            list,
+            document.getElementById('explam')
+        )
+       
+    </script> 
+   
+</body>
+</html>

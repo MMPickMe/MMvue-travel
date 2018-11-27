@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+	
+    <div id="explam"></div>
+    <script type="text/babel">
+    	var explam=document.getElementById('explam');
+    	//props
+    	
+		class Helloall extends React.Component{
+			render(){
+				console.log(this.props);
+				
+				return <ul className={this.props.className}>
+				{
+					React.Children.map(this.props.children,function(item){
+						return <li>{item}</li>
+					})
+				}
+				
+				
+				
+				</ul>
+				
+				
+				
+//				<h2  >props</h2>;
+			}
+		}
+
+			
+		Helloall.defaultProps={
+			id:'isddd'
+		}
+		ReactDOM.render(
+        	<Helloall className="red" name="heall" >
+        	<p>this is a P</p>
+        	<p>this is a P2</p>
+        	
+        	</Helloall>,
+        	explam
+        )
+    </script>
+    
+</body>
+
+</html>

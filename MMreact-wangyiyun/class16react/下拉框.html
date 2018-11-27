@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+	
+	
+    <div id="app"></div>
+    
+    
+    <script type="text/babel">
+    	var app=document.getElementById('app');
+    	
+		class Hel extends React.Component{
+			
+		
+			constructor(){
+				super()
+				this.state={
+					valueeee:'js'
+				}
+			}
+			change(event){
+				console.log(event);
+				this.setState({
+					valueeee:event.target.value
+				})
+				
+			}
+			sub(){
+				alert(this.state.valueeee);
+			}
+			render(){
+				//console.log(this)
+				return <div>
+				<form onSubmit={this.sub.bind(this)}>
+			    	<select name="" onChange={this.change.bind(this)} value={this.state.valueeee}>
+			    		<option value="h5">html5</option>
+			    		<option value="c3">css3</option>
+			    		<option value="js" >javascript</option>
+			    	</select>
+			    	
+			    	<input type="submit" value="submit"/>
+			    </form>
+
+					
+				</div>
+			}
+		}
+		
+		
+		Hel.defaultProps={
+			color:'green',
+			className:'red'
+		}
+		ReactDOM.render(
+        	<Hel></Hel>,
+        	app
+        )
+    </script>
+    
+</body>
+
+</html>

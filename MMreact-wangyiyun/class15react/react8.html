@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+	
+    <div id="explam"></div>
+    <script type="text/babel">
+    	var explam=document.getElementById('explam');
+    	//propshttp://sh.qihoo.com/pc/detail?realtime&url=http%3A%2F%2Ffawen.news.so.com%2Ff53b842d8551eb1f402e0bbf5a83fea0&check=e867ce689821662e&sign=360_21192782
+    	
+		class Hel extends React.Component{
+			
+			handclick(){
+				this.refs.inp.focus();
+				this.refs.inp.className='red'
+			}
+			render(){
+				console.log(this)
+				return <div><input type='text' ref='inp'/><button ref='btn' onClick={this.handclick.bind(this)}>
+				点击让input获取焦点</button></div>
+			}
+		}
+		ReactDOM.render(
+        	<Hel className="red" name="heall" ></Hel>,
+        	explam
+        )
+    </script>
+    
+</body>
+
+</html>

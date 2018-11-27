@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+</head>
+
+<body>
+	
+	
+    <div id="app"></div>
+    
+    
+    <script type="text/babel">
+    	var app=document.getElementById('app');
+    	
+		class Hel extends React.Component{
+			
+		
+			constructor(){
+				super()
+				this.state={
+					now:'现在是----',
+					time:new Date().toLocaleTimeString()
+				}
+			}
+			componentDidMount(){
+				this.timer=setInterval(()=>{
+					this.run()
+				},1000)
+			}
+			componentWillUnmount(){
+				clearInterval(this.timer);
+			}
+			run(){
+				this.setState({
+					time:new Date().toLocaleTimeString()
+				})
+			}
+		
+			render(){
+				//console.log(this)onChange={this.change.bind(this)}
+				return <div onClick={this.componentWillUnmount.bind(this)}>{this.state.now}{this.state.time}</div>
+			}
+		}
+		
+	
+		ReactDOM.render(
+        	<Hel></Hel>,
+        	app
+        )
+    </script>
+    
+</body>
+
+</html>

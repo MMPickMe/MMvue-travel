@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min .js"></script>
+    <script src="./js/jquery-3.3.1.min.js">
+    	
+    </script>
+</head>
+
+<body>
+	
+	
+    <div id="app"></div>
+    
+    
+    <script type="text/babel">
+    	var app=document.getElementById('app');
+    	
+		class Hel extends React.Component{
+			constructor(props){
+				super(props)
+				this.state={
+					content:[],
+					c:props.c,
+					
+				}
+			}
+			componentWillMount(){
+				//console.log(this);
+				this.res=$.get(this.props.source,(res)=>{
+					console.log(res.showapi_res_body.contentlist)
+					//var arr=res.showapi_res_body.contentlist;
+					this.setState({
+						content:res.showapi_res_body.contentlist,
+					})
+				})
+			}
+			click(event){
+				
+				this.state.content.map((item)=>{
+					console.log(item);
+					if(event.target.getAttribute('aid')==item.id){
+//						this.setState({
+//							c:''
+//						})
+					$('#'+item.id).toggleClass("dis");		
+					
+					}
+				//console.log(item.id);f
+		});
+				
+				
+				
+			}
+			render(){
+				return <ol>
+				{
+					this.state.content.map((item,index)=>{
+						return <li onClick={this.click.bind(this)} aid={item.id}>{index+1}{item.title}<div className={this.state.c} id={item.id}>{item.text}</div></li>
+					})
+				}</ol>
+			}
+		}
+		
+
+		Hel.defaultProps={
+			source:"http://route.showapi.com/341-1?showapi_appid=78715&showapi_sign=6cf8426eda764d1eac32d0779f5624e8",
+			c:'dis'
+		}
+	
+		ReactDOM.render(
+        	<Hel></Hel>,
+        	app
+        )
+    </script>
+    
+</body>
+
+</html>
