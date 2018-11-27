@@ -1,0 +1,216 @@
+.headerBottom .headerBottomMain .headerBottomMainLeft .color_3 a{
+    background: #cc3601;
+}
+.middle{
+    width: 100%;
+    height: 2702px;
+    background: url(../images/jfjp_middlebg.png) no-repeat center top;
+
+}
+.middleHeader{
+    height: 374px;
+    background: url(../images/jfjp_middle_onebg.png) no-repeat center top;
+    padding-top: 342px;
+    position: relative;
+}
+.middleHeader a img{
+    display: block;
+    margin-left: 1044px;
+    margin-bottom: 11px;
+}
+.middleHeader a{
+    display: block;
+    width: 156px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    color: #471a13;
+    font-size: 22px;
+    text-align: center;
+    line-height: 55px;
+    background: url(../images/jfjp_middle_top_bottombg_1.png) no-repeat;
+    font-weight: bold;
+}
+.middleHeader .weibo{
+    top: 414px;
+}
+.middleHeader a:hover{
+    color: #ff4400;
+}
+.middleBody{
+    height: 581px;
+    background: url(../images/jfjp_middle_twobg.png) no-repeat center top;
+    
+}
+.middleBody ul li{
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 198px;
+    height: 444px;
+    background: white;
+    float: left;
+    padding: 26px 26px 0px 26px;
+}
+.middleBody ul li img{
+    display: block;
+}
+.middleBody ul li .top{
+    height: 294px;
+    border-bottom: 1px dashed #dedcdc;
+
+}
+.middleBody ul li .top a{
+    display: block;
+    color: #474747;
+    font-size: 16px;
+    line-height: 54px;
+    font-weight: bold;
+}
+.middleBody ul li .top a:hover{
+    color: #ff4400;
+}
+.middleBody ul li .bottom{
+    background: white;
+}
+.middleBody ul li .bottom p{
+    font-size: 14px;
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+}
+.middleBody ul li .bottom p span{
+    color: #ff4400;
+    
+}
+.middleBody ul li .bottom  a{
+    display: block;
+    width: 157px;
+    height: 40px;
+    background-color: #ff4400;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    margin: 20px auto 0;
+}
+.middleBody ul li .bottom  a:hover{
+    background: #cc3601;
+}
+
+
+
+.middleFoot{
+    padding-top: 250px;
+    height: 475px;
+    background: url(../images/jfjp_middle_threebg.png) no-repeat center top;
+    position: relative;
+}
+.middleFoot ul li img{
+    display: block;
+}
+.middleFoot ul{
+    
+    margin-left: 100px;
+    
+}
+.middleFoot ul li{
+    width: 235px;
+    height: 349px;
+    background: white;
+    float: left;
+    margin-right: 10px;
+    padding-top: 21px;
+}
+.middleFoot ul li .top{
+   
+    border-bottom: 1px dashed #dedcdc;
+    margin-left: 21px;
+    margin-bottom: 10px;
+  
+}
+.middleFoot ul li .top a{
+    
+    display: block;
+    color: #474747;
+    font-size: 16px;
+    line-height: 54px;
+    font-weight: bold;
+}
+.middleFoot ul li .top a:hover{
+    color: #ff4400;
+}
+.middleFoot ul li .bottom{
+    background: white;
+    height: 64px;
+}
+.middleFoot ul li .bottom p{
+    font-size: 14px;
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 21px;
+    
+}
+.middleFoot ul li .bottom p span{
+    color: #ff4400;
+}
+.middleFoot .left{
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 90px;
+    top: 380px;
+    left: 30px;;
+    background: url(../images/jfjp_middle_foot_left.png);
+    
+}
+.middleFoot .left:hover{
+    background: url(../images/jfjp_middle_foot_left1.png);
+
+}
+.middleFoot .right{
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 90px;
+    top: 380px;
+    left: 1125px;;
+    background: url(../images/jfjp_middle_foot_right.png);
+    
+}
+.middleFoot .right:hover{
+    background: url(../images/jfjp_middle_foot_right1.png);
+
+}
+
+
+.middleBottom{
+    
+    height:680px;
+    background: url(../images/jfjp_middle_fourbg.png) no-repeat center top;
+    position: relative;
+}
+.middleBottom a{
+    width: 190px;
+    height: 50px;
+    display: block;
+    background: #ff4400;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px; /* 这个可以出现弧度 */
+    position: absolute;
+    top: 410px;
+    left: 55px;
+}
+.middleBottom .word{
+    width: 610px;
+    font-size: 14px;
+    line-height: 27px;
+    position: absolute;
+    top: 200px;
+    left: 522px;;
+}
