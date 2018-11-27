@@ -1,0 +1,42 @@
+<ul>
+    <div class="topic_main">
+
+        <li *ngFor="let item of list;let i=index">
+
+            <a routerLink='/newscontent/{{i+1}}' routerLinkActive='active'>
+                <img src={{item.url}} alt="">
+                <span class="listen_count"> 
+                    <div class="listen"></div>
+                   {{item.whole}}
+                </span>
+
+            </a>
+            <div class="topic_info">
+                <div class="topic_cont">
+                    <h3 class="topic_tit"> {{item.title}}</h3>
+                    <p>1<a href="" class="text_name">{{item.no1}}</a> {{item.no1a}}</p>
+
+
+                    <p>2<a href="" class="text_name">{{item.no2}}</a>{{item.no2a}}</p>
+
+
+                    <p>3<a href="" class="text_name">{{item.no3}}</a>{{item.no3a}}</p>
+
+                </div>
+                <i class="topic_arrow"></i>
+
+            </div>
+
+        </li>
+    </div>
+    <a href="" class="topic_more">去客户端发现更多好音乐 ></a>
+
+</ul>
+
+
+
+<!-- <div>
+    <a routerLink="/newscontent/1" routerLinkActive='active'>推荐1</a>
+    <a routerLink="/newscontent/2" routerLinkActive='active'>推荐2</a>
+    <a routerLink="/newscontent/3" routerLinkActive='active'>推荐3</a>
+</div> -->

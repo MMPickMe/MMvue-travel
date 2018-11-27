@@ -1,0 +1,22 @@
+<div class="weui-search-bar" id="searchBar">
+    <form class="weui-search-bar__form">
+        <div class="weui-search-bar__box">
+            <i class="weui-icon-search"></i>
+            <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索歌曲、歌单、专辑" required="" (click)='xiaoshi()'>
+            <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+        </div>
+        <label class="weui-search-bar__label" id="searchText">
+            <i class="weui-icon-search"></i>
+            <span>搜索歌曲、歌单、专辑</span>
+          </label>
+    </form>
+    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel" (click)='huilai()'>取消</a>
+</div>
+
+<div class="more" [hidden]='flag==2'>
+    <div>热门搜索</div>
+
+    <a href="" class="hot">见面吧!爱豆ONER</a><a href="">一起走过的日子 </a>
+    <a href="">为你我受冷风吹 </a><a href="">LOST RIVERS </a>
+    <a href="">爱的故事上集 </a><a href="">你一定要幸福 </a>
+</div>

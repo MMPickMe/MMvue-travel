@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Myapp</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width,user-scalable=0, initial-scale=1.0,maximum-scable=1.0,minimum-scable=1.0">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./assets/extra/swiper.min.css">
+    <link rel="stylesheet" href="./assets/extra/jquery-weui.min.css">
+    <link rel="stylesheet" href="./assets/extra/weui.min.css">
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 720) deviceWidth = 720;
+        document.documentElement.style.fontSize = deviceWidth / 7.2 + 'px';
+    </script>
+
+</head>
+
+<body>
+    <app-root></app-root>
+</body>
+<!-- Swiper JS -->
+<script src="./assets/extra/jquery-3.3.1.min.js"></script>
+<script src="./assets/extra/jquery-weui.min.js"></script>
+<script src="./assets/extra/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    // debugger;
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        observer: true,
+        observerParents: true,
+        loop: true,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+</script>
+
+</html>

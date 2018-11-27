@@ -1,0 +1,112 @@
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 0.18rem;
+    background: rgb(223, 106, 106);
+}
+
+.swiper-slide a,
+.swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 0.3rem;
+    color: #000;
+    margin: 0.2rem 3%;
+    font-weight: normal;
+}
+
+.radio_station {
+    width: 94%;
+    margin: 0 auto;
+    background: #ccc;
+}
+
+.radio_station ul {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.radio_station ul li {
+    width: 49%;
+    background: #fff;
+}
+
+.radio_station ul li>a {
+    display: block;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+
+.radio_station ul li>a>img {
+    display: block;
+    width: 100%;
+}
+
+.radio_station ul li>a>.start {
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    background-position: 0 0;
+    background-image: url('../../../assets/img/list_sprite.png');
+    background-repeat: no-repeat;
+    background-size: 0.4rem 0.94rem;
+}
+
+.radio_station ul li>a>p {
+    font-size: 0.3rem;
+    line-height: 1rem;
+    text-indent: 0.5em;
+}
+
+.list_more {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.25rem;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+    padding: 0.2rem 0;
+}
+
+.footer>a {
+    height: 0.8rem;
+    line-height: 0.6rem;
+    font-size: 0.25rem;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #000;
+}
+
+.footer_logo {
+    display: block;
+    width: 82px;
+    height: 24px;
+    margin: 0 auto 10px;
+    background-image: url('../../../assets/img/footer_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+}
+
+.footer_email {
+    font-size: 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, .5);
+}

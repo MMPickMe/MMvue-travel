@@ -1,0 +1,54 @@
+.login {
+    position: relative;
+    height: 0.98rem;
+    background: #31c27c;
+}
+
+.logo {
+    float: left;
+    display: block;
+    width: 2.3rem;
+    height: 0.62rem;
+    margin: 0.2rem 0.3rem;
+    background-image: url('../assets/img/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn_download {
+    position: absolute;
+    display: inline-block;
+    right: 0.3rem;
+    top: 0.2rem;
+    height: 0.62rem;
+    padding: 0 0.2rem;
+    line-height: 0.62rem;
+    border-radius: 1rem;
+    font-size: 0.2rem;
+    background: #149c5a;
+    color: #fff;
+}
+
+.nav {
+    width: 100%;
+    height: 0.63rem;
+    background: #fff;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.nav a {
+    width: 33.33%;
+    font-size: 0.35rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.active {
+    color: #31c27c;
+    border-bottom: 2px solid #31c27c;
+}
